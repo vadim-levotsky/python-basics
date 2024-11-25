@@ -21,3 +21,21 @@ java = "     java  "
 pythooon = "python   "
 kotlin = "   KOTLIN"
 print(f"I know following programming languages:\n\t{java.strip().upper()}!!\n\t{pythooon.rstrip().title()}!\n\t!{kotlin.lower().lstrip()}")
+print(f'''I know following programming languages:
+\t{java.strip().upper()}!!
+\t{pythooon.rstrip().title()}!
+\t!{kotlin.lower().lstrip()}''')
+
+## sting is False when it's empty
+empty_string = ""
+if empty_string:
+    print("Is NOT empty")
+else:
+    print("Is empty")
+
+print("is not empty? -> " + str(empty_string.isalpha()))
+
+file_name = "python_notes.py"
+print(file_name.removesuffix(".py"))
+site_url = "https://bla-bla.com"
+print(site_url.removeprefix("https://"))
