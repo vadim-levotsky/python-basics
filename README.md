@@ -4,13 +4,14 @@ This is a repo for the code written during self studying Python.
 ## Materials
  - book [Python Crash Course: A Hands-On, Project-Based Introduction to Programming](https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280)
  - video from freeCodeCamp [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw)
+ - repo https://github.com/blu3r4y/python-for-java-developers
 
 ## Zen of Python by Tim Peters
 - open command line
-- enter `python` press enter. result - >`>>>`
+- type `python` and hit enter
 - when type `import this` and hit enter
 
-#### **RESULT:**
+### **RESULT:**
 
 - Beautiful is better than ugly.
 - Explicit is better than implicit.
@@ -31,6 +32,4 @@ This is a repo for the code written during self studying Python.
 - If the implementation is hard to explain, it's a bad idea.
 - If the implementation is easy to explain, it may be a good idea.
 - Namespaces are one honking great idea -- let's do more of those!
-
-
 
