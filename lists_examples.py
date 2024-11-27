@@ -1,3 +1,7 @@
+import time
+
+from debugpy.common.timestamp import current
+
 bicycles = ['treK', 'cannondale', 'specialized', 'mErida', 'scott']
 print(bicycles)
 print(bicycles[2].title())
@@ -58,4 +62,57 @@ print("\n**** SORT WIT MODIFYING LIST****")
 items_copy.sort(key=str.lower)
 print(f"sorted items: {items_copy}")
 
+print("*** CREATE A LIST ***")
+numbers_list = list(range(1, 10))
+print(numbers_list)
+
+for value in range(1, 5):
+    print(value)
+
+squares = []
+squares_dict = {}
+start = time.time()
+for v in range (1, 11):
+    square = v ** 2
+    squares.append(square)
+    squares_dict[v] = square
+
+print("squares 1 to 10= ", squares)
+print("squares = ", squares_dict)
+print(f"min value={min(squares)}, max value={max(squares)}, sum={sum(squares)}")
+print("DURATION: ", time.time() - start)
+
+### LIST COMPREHENSIONS
+squares_3 = [v ** 2 for v in range(1, 11)]
+print("list comprehensive: ", squares_3)
+
+for i in range(1, 21):
+    print(i)
+
+million = list(range(1, 1_000_001))
+# for value in million:
+#     print(value)
+
+print(f"min value={min(million)}, max value={max(million)}, sum={sum(million)}")
+
+odd_numbers = list(range(1, 20, 2))
+print(f"odd numbers: {odd_numbers}")
+
+multiply_three = []
+for i in range(3, 31):
+    multiply_three.append(i * 3)
+multiply_three_2 = [value * 3 for value in range(3, 31)]
+print(multiply_three)
+print(multiply_three_2)
+assert multiply_three_2 == multiply_three
+print(multiply_three == multiply_three_2)
+
+cubes = [v ** 3 for v in range(1, 11)]
+for cube in cubes:
+    print(cube)
+
+### SLICING A LIST
+print(multiply_three[0:15:3]) ## slice from 0 includes to 15 inclusive with step = 3 (indexes = 0,3,6,9,12)
+print(multiply_three[:-3]) # from 0 to 3rd element from end
+print(multiply_three[-3:]) # last 3 elements
 
